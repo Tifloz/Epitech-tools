@@ -1,5 +1,5 @@
 #! /bin/sh
-
+# This script is written by Epitech, not by me, I just modified few things
 GRAPH_LIB_NAME="libc_graph_prog.so"
 
 SFML_SOURCE_URL="http://www.sfml-dev.org/files/SFML-2.3.2-sources.zip"
