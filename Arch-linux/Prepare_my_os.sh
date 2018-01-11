@@ -190,7 +190,7 @@ function setup_emacs
 		echo "Setup emacs"
 		return
 	fi
-	SRCDIR="src"
+	SRCDIR=".files"
         DESTDIR="$HOME"
 
 	echo "Installing {EPITECH.} Emacs configuration on your session..."
