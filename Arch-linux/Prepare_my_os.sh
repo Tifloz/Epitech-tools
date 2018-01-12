@@ -61,7 +61,7 @@ function script_header
 
 	echo -ne $color
 	line "-"
-	echo "##> "$1
+	echo "~##~> "$1
 	line "-"
 	echo -ne $C_RST
 }
@@ -145,7 +145,7 @@ function sys_install
 				echo "zypper -y install"
 				;;
 			archlinux)
-				echo "pacman --noconfirm -S"
+			    echo "pacman --noconfirm -S"
 				;;
 			fedora)
 				echo "dnf -y install"
@@ -233,11 +233,14 @@ setup_emacs
 script_header "INSTALLATION DE GCC"
 sys_install gcc
 
-script_header "INSTALLATION DE BUILD-ESSENTIAL POUR LA COMPILATION"
-sys_install build-essential
+script_header "INSTALLATION DE BASE-DEVEL POUR LA COMPILATION"
+sys_install base-devel
 
 script_header "INSTALLATION DE VALGRIND"
 sys_install valgrind
+
+script_header "INSTALLATION DE OPENSSH"
+sys_install openssh
 
 script_header "INSTALLATION DE OCAML"
 sys_install ocaml
